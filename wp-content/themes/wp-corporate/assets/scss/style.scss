@@ -1,0 +1,82 @@
+@use "foundation/variables";
+@use "foundation/mixin";
+@use "layout/layout";
+
+.site-header {
+  padding: 40px 0;
+  .site-branding {
+    text-align: center;
+    .site-title {
+      font-weight: 700;
+      letter-spacing: variables.$letter-spacing-wide;
+      a {
+        text-decoration: none;
+        color: variables.$color-text;
+      }
+    }
+  }
+}
+
+// --- Hero Section ---
+.hero {
+  padding: 100px 0;
+  overflow: hidden;
+
+  &__inner {
+    align-items: center;
+  }
+
+  &__text-box {
+    grid-column: 2 / span 4;
+    z-index: 2;
+    @include mixin.float-in(0.5s);
+  }
+
+  &__catchphrase {
+    @include mixin.vertical-rl;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    margin: 0;
+    color: variables.$color-text;
+
+    &-inner {
+      display: inline-block;
+      padding-top: 20px;
+    }
+  }
+
+  &__image-box {
+    grid-column: 5 / span 8;
+    position: relative;
+    @include mixin.float-in(1s);
+  }
+
+  &__figure {
+    margin: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, variables.$color-base 0%, transparent 40%);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(20%);
+  }
+}
+
+.site-footer {
+  padding: 60px 0;
+  text-align: center;
+  background-color: variables.$color-text;
+  color: variables.$color-base;
+}

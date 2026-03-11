@@ -1,0 +1,46 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixin" as *;
+
+// --- Reset & Base ---
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-base;
+  color: $color-text;
+  font-family: $font-main;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// --- Grid & Layout ---
+.l-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Asymmetric Grid Helper
+.l-asymmetric-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+
+  &__item {
+    &--offset-top {
+      margin-top: 40px;
+    }
+    &--offset-bottom {
+      margin-bottom: 40px;
+    }
+  }
+}

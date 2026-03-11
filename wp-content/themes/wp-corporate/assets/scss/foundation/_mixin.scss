@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+// --- Vertical Writing (縦書き) ---
+@mixin vertical-rl {
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  text-orientation: mixed;
+}
+
+// --- Media Queries ---
+@mixin mq($breakpoint) {
+  @media screen and (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+// --- Smooth Float In Animation ---
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin float-in($delay: 0s) {
+  opacity: 0;
+  animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) $delay forwards;
+}
