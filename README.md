@@ -9,14 +9,14 @@
 
 ## 技術スタック
 
-| カテゴリ | 技術 |
-|---|---|
-| CMS | WordPress（カスタムテーマ） |
-| PHP | 名前空間 (`WPCorporate`) によるモジュール管理 |
-| CSS 設計 | Sass（SCSS）/ FLOCSS ベース |
-| フォント | [Shippori Mincho](https://fonts.google.com/specimen/Shippori+Mincho)（Google Fonts） |
-| レイアウト | 12カラム CSS Grid（非対称グリッド） |
-| ライセンス | GPL v2 or later |
+| カテゴリ   | 技術                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------ |
+| CMS        | WordPress（カスタムテーマ）                                                          |
+| PHP        | 名前空間 (`WPCorporate`) によるモジュール管理                                        |
+| CSS 設計   | Sass（SCSS）/ FLOCSS ベース                                                          |
+| フォント   | [Shippori Mincho](https://fonts.google.com/specimen/Shippori+Mincho)（Google Fonts） |
+| レイアウト | 12カラム CSS Grid（非対称グリッド）                                                  |
+| ライセンス | GPL v2 or later                                                                      |
 
 ## ディレクトリ構成
 
@@ -49,11 +49,11 @@ wp-corporate/
 
 ### カラーパレット ── 日本の伝統色
 
-| 変数名 | カラーコード | 和名 | 用途 |
-|---|---|---|---|
-| `$color-base` | `#F2F2F2` | 鳥の子色（Torinoko-iro） | 背景色。温かみのある和紙のような白 |
-| `$color-text` | `#2B2B2B` | 墨色（Sumi-iro） | テキスト色。深い墨のような黒 |
-| `$color-accent` | `#8B0000` | 深紅（Shinku） | アクセント色。漆器のような深い紅 |
+| 変数名          | カラーコード | 和名                     | 用途                               |
+| --------------- | ------------ | ------------------------ | ---------------------------------- |
+| `$color-base`   | `#F2F2F2`    | 鳥の子色（Torinoko-iro） | 背景色。温かみのある和紙のような白 |
+| `$color-text`   | `#2B2B2B`    | 墨色（Sumi-iro）         | テキスト色。深い墨のような黒       |
+| `$color-accent` | `#8B0000`    | 深紅（Shinku）           | アクセント色。漆器のような深い紅   |
 
 ### タイポグラフィ
 
